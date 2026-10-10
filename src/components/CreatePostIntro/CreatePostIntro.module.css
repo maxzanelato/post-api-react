@@ -1,0 +1,13 @@
+.intro { padding: 24px 0; }
+.eyebrow { display: inline-flex; align-items: center; gap: 8px; color: #8178c9; font-size: .69rem; font-weight: 850; letter-spacing: .11em; }
+.eyebrow span { width: 7px; height: 7px; background: #7a6dea; border-radius: 50%; box-shadow: 0 0 0 4px #eeecff; }
+.intro h1 { margin: 21px 0 15px; color: var(--ink); font-size: clamp(2.2rem, 4vw, 3.3rem); font-weight: 850; line-height: 1.1; letter-spacing: -.065em; }
+.intro h1 span { color: var(--accent); }
+.intro > p { max-width: 360px; margin: 0; color: var(--muted); font-size: .96rem; line-height: 1.8; }
+.tips { margin-top: 36px; display: flex; flex-direction: column; gap: 22px; }
+.tips > div { display: flex; align-items: flex-start; gap: 13px; }
+.tips > div > span { flex: 0 0 34px; height: 34px; display: grid; place-items: center; color: #6d62df; background: #eeecff; border-radius: 11px; font-size: .73rem; font-weight: 850; }
+.tips p { margin: 0; color: var(--muted); font-size: .8rem; line-height: 1.7; }
+.tips strong { color: var(--ink); font-size: .87rem; }
+@media (max-width: 850px) { .intro { padding: 0; } .intro h1 { max-width: 600px; } .intro > p { max-width: 520px; } .tips { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 13px; } .tips > div { flex-direction: column; gap: 8px; } }
+@media (max-width: 560px) { .tips { grid-template-columns: 1fr; gap: 14px; } .tips > div { flex-direction: row; gap: 12px; } }

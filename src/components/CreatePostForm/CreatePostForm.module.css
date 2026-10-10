@@ -1,0 +1,16 @@
+.formCard { padding: 30px; background: white; border: 1px solid var(--border); border-radius: 22px; box-shadow: var(--shadow); }
+.formHeader { display: flex; align-items: center; gap: 13px; margin-bottom: 28px; }
+.formIcon { display: grid; place-items: center; width: 45px; height: 45px; color: var(--accent); background: #eeecff; border-radius: 14px; font-size: 1.25rem; }
+.formHeader h2 { margin: 0 0 4px; color: var(--ink); font-size: 1.2rem; letter-spacing: -.03em; }
+.formHeader p { margin: 0; color: var(--muted); font-size: .8rem; }
+.formCard form { display: flex; flex-direction: column; gap: 23px; }
+.formFooter { padding-top: 19px; display: flex; flex-direction: column; align-items: stretch; gap: 17px; border-top: 1px solid #f0f1f7; }
+.formFooter > p { margin: 0; display: flex; align-items: flex-start; gap: 8px; color: #888da0; font-size: .76rem; line-height: 1.5; }
+.formFooter > p span { color: var(--accent); }
+.submit { min-height: 49px; display: inline-flex; align-items: center; justify-content: center; gap: 9px; color: white; background: var(--accent); border: 0; border-radius: 12px; font: inherit; font-size: .9rem; font-weight: 800; cursor: pointer; box-shadow: 0 6px 14px rgb(102 88 223 / 20%); transition: background .15s ease, transform .15s ease; }
+.submit:hover:not(:disabled) { background: #5548d1; transform: translateY(-1px); }
+.submit:disabled { opacity: .7; cursor: wait; }
+.buttonSpinner { width: 15px; height: 15px; border: 2px solid rgb(255 255 255 / 45%); border-top-color: white; border-radius: 50%; animation: spin .7s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+@media (max-width: 850px) { }
+@media (max-width: 560px) { .formCard { padding: 22px 18px; } }

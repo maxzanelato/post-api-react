@@ -1,0 +1,31 @@
+.hero { min-height: 350px; padding: 42px 48px; display: grid; grid-template-columns: 1.2fr .8fr; align-items: center; gap: 20px; overflow: hidden; position: relative; border-radius: 28px; background: linear-gradient(120deg, #f0efff 0%, #f7f4ff 48%, #fff1eb 100%); }
+.heroCopy { position: relative; z-index: 2; }
+.eyebrow { display: inline-flex; align-items: center; gap: 8px; color: #6860b9; font-size: .7rem; font-weight: 850; letter-spacing: .13em; }
+.eyebrow > span { width: 7px; height: 7px; border-radius: 50%; background: #7165ed; box-shadow: 0 0 0 4px rgb(113 101 237 / 12%); }
+.hero h1 { margin: 19px 0 15px; color: #20243a; font-size: clamp(2.4rem, 5vw, 3.8rem); font-weight: 850; line-height: 1.04; letter-spacing: -.065em; }
+.hero h1 span { color: var(--accent); }
+.heroCopy > p { max-width: 420px; margin: 0; color: #686c80; font-size: .98rem; line-height: 1.7; }
+.heroStats { margin-top: 28px; display: flex; align-items: center; gap: 22px; }
+.heroStats div { display: flex; flex-direction: column; gap: 2px; }
+.heroStats strong { color: #24283e; font-size: 1.35rem; font-weight: 850; }
+.heroStats div span { color: #7e8294; font-size: .76rem; }
+.statDivider { width: 1px; height: 36px; background: #d9d6ee; }
+.heroArt { position: relative; min-height: 260px; display: grid; place-items: center; }
+.centerShape { position: relative; z-index: 2; width: 128px; height: 145px; display: grid; place-items: center; background: linear-gradient(145deg, #8d82ff, #6658df); border: 6px solid rgb(255 255 255 / 70%); border-radius: 36px 36px 42px 42px; box-shadow: 0 22px 50px rgb(88 77 207 / 28%); transform: rotate(-8deg); }
+.centerShape span { color: white; font-size: 4rem; font-weight: 900; letter-spacing: -.1em; transform: rotate(8deg); }
+.orbit { position: absolute; border: 1px dashed rgb(117 105 219 / 35%); border-radius: 50%; }
+.orbitOne { width: 228px; height: 228px; transform: rotate(-20deg); }
+.orbitTwo { width: 290px; height: 175px; transform: rotate(45deg); }
+.note { position: absolute; z-index: 3; width: 96px; height: 72px; padding: 13px; display: flex; flex-direction: column; justify-content: space-between; background: white; border: 1px solid rgb(255 255 255 / 80%); border-radius: 13px; box-shadow: 0 12px 25px rgb(58 54 100 / 12%); }
+.note > span { align-self: flex-end; color: #8b80ed; font-weight: 900; }
+.note div { display: flex; flex-direction: column; gap: 5px; }
+.note i { width: 100%; height: 4px; border-radius: 5px; background: #e7e6f5; }
+.note i:nth-child(2) { width: 72%; }
+.note i:nth-child(3) { width: 45%; }
+.noteOne { top: 28px; right: 8px; transform: rotate(10deg); }
+.noteTwo { bottom: 22px; left: 0; width: 78px; height: 61px; transform: rotate(-12deg); }
+.sparkle { position: absolute; top: 28px; left: 21px; color: #ff9d77; font-size: 2rem; }
+.tinyDot { position: absolute; right: 25px; bottom: 30px; width: 12px; height: 12px; background: #ffae8d; border-radius: 50%; }
+@media (max-width: 760px) { .hero { min-height: unset; padding: 35px 28px; grid-template-columns: 1fr; } .heroArt { min-height: 200px; margin-top: 3px; } .centerShape { width: 100px; height: 116px; } .centerShape span { font-size: 3.2rem; } .orbitOne { width: 175px; height: 175px; } .orbitTwo { width: 230px; height: 145px; } .noteOne { right: calc(50% - 130px); } .noteTwo { left: calc(50% - 130px); } .sparkle { left: calc(50% - 120px); top: 14px; } .tinyDot { right: calc(50% - 125px); bottom: 15px; } }
+@media (max-width: 500px) { .hero { padding: 29px 22px; border-radius: 21px; } .hero h1 { font-size: 2.5rem; } }
+@media (prefers-reduced-motion: reduce) { .centerShape { transition: none; } }

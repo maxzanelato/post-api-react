@@ -1,0 +1,26 @@
+.shell { min-height: 100vh; display: flex; flex-direction: column; }
+.header { position: sticky; top: 0; z-index: 20; background: rgb(255 255 255 / 88%); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); }
+.headerInner { width: min(1120px, calc(100% - 40px)); min-height: 76px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); font-size: 1.35rem; font-weight: 800; letter-spacing: -.06em; text-decoration: none; }
+.brandMark { display: grid; place-items: center; width: 35px; height: 35px; border-radius: 12px; background: var(--accent); color: white; font-size: 1rem; letter-spacing: 0; box-shadow: 0 5px 14px rgb(90 77 230 / 25%); }
+.brandDot { color: var(--accent); }
+.nav { display: flex; align-items: center; gap: 10px; }
+.navLink, .createLink { min-height: 42px; padding: 0 15px; display: inline-flex; align-items: center; gap: 6px; border-radius: 12px; text-decoration: none; font-size: .91rem; font-weight: 650; transition: background .15s ease, color .15s ease, transform .15s ease; }
+.navLink { color: var(--muted); }
+.navLink:hover, .active { color: var(--accent); background: var(--accent-soft); }
+.createLink { color: white; background: var(--ink); }
+.createLink:hover { background: #30374b; transform: translateY(-1px); }
+.createActive { background: var(--accent); }
+.main { width: min(1120px, calc(100% - 40px)); margin: 0 auto; flex: 1; padding: 52px 0 72px; }
+.footer { width: min(1120px, calc(100% - 40px)); margin: 0 auto; padding: 24px 0 30px; display: flex; justify-content: space-between; gap: 16px; color: var(--muted); border-top: 1px solid var(--border); font-size: .8rem; }
+.footer p { margin: 0; }
+.footer p span { margin-left: 8px; color: #a0a5b3; }
+@media (max-width: 600px) {
+  .headerInner { width: calc(100% - 28px); min-height: 68px; }
+  .brand { font-size: 1.15rem; gap: 7px; }
+  .brandMark { width: 31px; height: 31px; }
+  .nav { gap: 2px; }
+  .navLink, .createLink { min-height: 38px; padding: 0 10px; font-size: .8rem; }
+  .main { width: calc(100% - 28px); padding: 34px 0 54px; }
+  .footer { width: calc(100% - 28px); flex-direction: column; }
+}

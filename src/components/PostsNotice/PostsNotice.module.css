@@ -1,0 +1,2 @@
+.notice { margin-top: 20px; padding: 13px 16px; display: flex; align-items: flex-start; gap: 10px; color: #286549; background: #edfaf2; border: 1px solid #c9eed7; border-radius: 12px; font-size: .84rem; line-height: 1.55; }
+.notice span { flex: 0 0 auto; font-weight: 900; }

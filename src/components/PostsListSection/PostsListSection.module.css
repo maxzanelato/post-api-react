@@ -1,0 +1,15 @@
+.listSection { padding-top: 56px; }
+.listHeading { margin-bottom: 24px; display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; }
+.sectionEyebrow { display: inline-flex; align-items: center; gap: 8px; color: #9a92db; font-size: .66rem; font-weight: 850; letter-spacing: .13em; }
+.listHeading h2 { margin: 7px 0 0; color: var(--ink); font-size: clamp(1.5rem, 3vw, 1.9rem); font-weight: 850; letter-spacing: -.05em; }
+.count { display: inline-grid; place-items: center; min-width: 28px; height: 25px; margin-left: 5px; padding: 0 7px; vertical-align: 4px; color: #6d61dc; background: #eeecff; border-radius: 8px; font-size: .74rem; letter-spacing: 0; }
+.newPostLink { min-height: 42px; padding: 0 15px; display: inline-flex; align-items: center; gap: 7px; flex-shrink: 0; color: white; background: var(--accent); border-radius: 12px; font-size: .86rem; font-weight: 750; text-decoration: none; box-shadow: 0 5px 13px rgb(102 88 223 / 20%); transition: transform .15s ease, background .15s ease; }
+.newPostLink:hover { background: #5548d1; transform: translateY(-1px); }
+.newPostLink span { font-size: 1.15rem; }
+.resultLine { margin: 13px 0 14px; display: flex; justify-content: space-between; color: #9297a8; font-size: .76rem; }
+.refreshing { color: var(--accent); }
+.empty { padding: 54px 20px; text-align: center; background: white; border: 1px dashed #dfe2ed; border-radius: 18px; }
+.empty > span { color: #8277ec; font-size: 2.4rem; }
+.empty h3 { margin: 10px 0 5px; color: var(--ink); }
+.empty p { margin: 0; color: var(--muted); font-size: .9rem; }
+@media (max-width: 760px) { .listSection { padding-top: 42px; } }

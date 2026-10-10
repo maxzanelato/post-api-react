@@ -1,0 +1,6 @@
+.page { max-width: 1040px; margin: 0 auto; }
+.back { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 25px; color: var(--muted); font-size: .88rem; font-weight: 700; text-decoration: none; }
+.back:hover { color: var(--accent); }
+.back span { font-size: 1.2rem; }
+.layout { display: grid; grid-template-columns: .76fr 1.24fr; gap: 50px; align-items: start; }
+@media (max-width: 850px) { .layout { grid-template-columns: 1fr; gap: 27px; } }

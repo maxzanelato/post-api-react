@@ -1,0 +1,6 @@
+.alert { margin: 25px 0; padding: 20px; display: flex; align-items: flex-start; gap: 14px; background: #fff7f6; border: 1px solid #ffd8d3; border-radius: 16px; color: #8b2820; }
+.icon { flex: 0 0 28px; width: 28px; height: 28px; display: grid; place-items: center; color: white; background: #d94b40; border-radius: 50%; font-weight: 800; }
+.content h2 { margin: 1px 0 5px; font-size: .98rem; }
+.content p { margin: 0; line-height: 1.55; font-size: .88rem; }
+.retry { margin-top: 13px; padding: 9px 12px; color: #8b2820; background: white; border: 1px solid #f4b8b2; border-radius: 9px; font: inherit; font-size: .82rem; font-weight: 700; cursor: pointer; }
+.retry:hover { background: #fff0ee; }
